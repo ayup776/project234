@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Assistant · BERT + SpeechT5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <div class="brand-name">Voice Assistant</div>
+          <div class="brand-sub">BERT · SpeechT5</div>
+        </div>
+      </div>
+
+      <div class="status-block">
+        <div class="status-row">
+          <span class="status-dot" id="status-dot"></span>
+          <span id="status-label">Ready</span>
+        </div>
+        <dl class="status-meta">
+          <div><dt>Matching</dt><dd>all-MiniLM-L6-v2</dd></div>
+          <div><dt>Speech</dt><dd>SpeechT5 + HiFi-GAN</dd></div>
+        </dl>
+      </div>
+
+      <div class="intents-block">
+        <div class="intents-heading">Known intents <span id="intent-count">(13)</span></div>
+        <ul class="intents-list" id="intents-list">
+          <!-- populated by main.js -->
+        </ul>
+      </div>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-header">
+        <h1>Conversation</h1>
+        <button type="button" class="reset-btn" id="reset-btn">Clear</button>
+      </header>
+
+      <div class="chat-window" id="chat-window">
+        <div class="empty-state" id="empty-state">
+          <span class="empty-mark" aria-hidden="true"></span>
+          <p>Send a message to start. The assistant replies in text and speech.</p>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type a message…"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+    </main>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

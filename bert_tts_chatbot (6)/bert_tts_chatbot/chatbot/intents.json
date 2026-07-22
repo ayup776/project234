@@ -1,0 +1,191 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey there",
+        "Good morning",
+        "Good evening",
+        "What's up"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Great to hear from you."
+      ]
+    },
+    {
+      "tag": "wellbeing",
+      "patterns": [
+        "How are you",
+        "How are you doing",
+        "How's it going",
+        "Are you okay",
+        "How have you been"
+      ],
+      "responses": [
+        "I'm doing well, thanks for asking! How about you?",
+        "I'm just a bunch of code, but I'm running smoothly! How are you?",
+        "Doing great, thanks! What's on your mind?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "I have to go now",
+        "Talk to you later",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day.",
+        "See you soon! Take care.",
+        "Bye for now!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot",
+        "Appreciate it"
+      ],
+      "responses": [
+        "You're very welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "Who are you",
+        "What is your name",
+        "Are you a robot",
+        "Tell me about yourself",
+        "What can you do"
+      ],
+      "responses": [
+        "I'm a BERT powered voice assistant built with Flask.",
+        "I'm a chatbot that understands your text using BERT and talks back using text to speech.",
+        "I'm your friendly AI assistant, here to chat and talk back to you."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like",
+        "Is it going to rain today",
+        "Tell me the weather",
+        "How hot is it outside"
+      ],
+      "responses": [
+        "I can't check live weather yet, but you can plug in a weather API for that feature.",
+        "I don't have live weather access right now, but that would be a great feature to add."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "I need help",
+        "Can you help me",
+        "I have a question",
+        "Assist me"
+      ],
+      "responses": [
+        "Of course! Tell me what you need help with.",
+        "I'm here for you, go ahead and ask your question."
+      ]
+    },
+    {
+      "tag": "goodnight",
+      "patterns": [
+        "Good night",
+        "Night",
+        "Sleep well",
+        "See you tomorrow",
+        "I'm going to sleep"
+      ],
+      "responses": [
+        "Good night! Sleep well.",
+        "Night! Talk to you tomorrow.",
+        "Sweet dreams!"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke",
+        "Say something funny",
+        "Make me laugh",
+        "Do you know any jokes"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and now it won't stop sending me KitKat ads.",
+        "Why did the developer go broke? Because he used up all his cache."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "What time is it",
+        "Tell me the time",
+        "What's the current time",
+        "Do you know the time"
+      ],
+      "responses": [
+        "I don't have access to a live clock yet, but you can wire that up with Python's datetime module.",
+        "I can't check the time right now, but that would be a quick feature to add on the backend."
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "How old are you",
+        "What's your age",
+        "When were you created",
+        "When were you made"
+      ],
+      "responses": [
+        "I don't have an age really, I was just started up for this conversation!",
+        "I'm as old as the last time this server restarted."
+      ]
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "You're awesome",
+        "Good job",
+        "You're smart",
+        "I like you",
+        "Well done"
+      ],
+      "responses": [
+        "Thank you, that's really kind of you to say!",
+        "Aw, thanks! That made my day.",
+        "I appreciate that!"
+      ]
+    },
+    {
+      "tag": "mood_check",
+      "patterns": [
+        "I'm feeling good today",
+        "I'm having a great day",
+        "I'm feeling down",
+        "I'm tired",
+        "I'm stressed"
+      ],
+      "responses": [
+        "Thanks for sharing that with me! Hope the rest of your day goes well.",
+        "I hear you. Take a moment for yourself if you need it."
+      ]
+    }
+  ]
+}
