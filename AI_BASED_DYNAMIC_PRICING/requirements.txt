@@ -1,0 +1,6 @@
+flask
+serverless-wsgi
+scikit-learn
+numpy
+pandas
+joblib
